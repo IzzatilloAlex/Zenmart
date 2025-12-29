@@ -1,3 +1,6 @@
+:root {
+  --font: "jost";
+}
 html,
 body {
   margin: 0;
@@ -89,7 +92,7 @@ p {
   border: none;
   outline: none;
   color: rgba(4, 30, 66, 1);
-  font-family: Jost;
+  font-family: var(--font);
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;
@@ -301,7 +304,7 @@ p {
 
 /* FOOTER SECTION */
 
-.home-main__section .footer-section {
+.footer-section {
   position: relative;
   padding: 90px 0 20px;
   width: 100%;
@@ -312,7 +315,7 @@ p {
   background-color: #eaeaea;
 }
 
-.footer-spec_title {
+.footer-section .footer-spec_title {
   margin-bottom: 30px;
   display: block;
   color: rgba(4, 30, 66, 1);
@@ -384,13 +387,13 @@ p {
   text-align: left;
 }
 
-.footer-top .footer-support_box {
+.container .footer-top .footer-support_box {
   margin-left: 60px;
   display: flex;
   flex-direction: column;
 }
 
-.footer-support_box a {
+.container .footer-support_box a {
   color: rgba(4, 30, 66, 1);
 
   font-family: Jost;
@@ -402,21 +405,21 @@ p {
   text-align: left;
 }
 
-.footer-top .footer-media-box {
+.container .footer-top .footer-media-box {
   margin-left: 55px;
   display: flex;
   flex-direction: column;
 }
 
-.footer-media-box .footer-media_main {
+.container .footer-media-box .footer-media_main {
   display: flex;
   flex-direction: column;
 }
-.footer-media_main .media-box {
+.container .footer-media_main .media-box {
   display: flex;
   flex-direction: row;
 }
-.media-box i {
+.container .media-box i {
   margin-right: 25px;
   font-family: Font Awesome 5 Brands;
   font-style: Regular;
@@ -428,7 +431,7 @@ p {
   text-transform: capitalize;
 }
 
-.footer-media_main .mobile-app_box {
+.container .footer-media_main .mobile-app_box {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
@@ -438,7 +441,7 @@ p {
   width: 24px;
   height: 16px;
 }
-.mobile-app_box span {
+.container .mobile-app_box span {
   margin-left: 20px;
   color: rgba(4, 30, 66, 1);
   font-family: Jost;
@@ -450,7 +453,7 @@ p {
   text-align: left;
 }
 
-.footer-media_main .card-box {
+.container .footer-media_main .card-box {
   width: 272px;
   display: flex;
   flex-direction: row;
@@ -464,7 +467,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  border-top: rgba(234, 234, 234, 1);
+  border-top: 1px solid rgb(201, 175, 175);
 }
 
 .footer-bottom .footer-main {
@@ -537,5 +540,4 @@ p {
   border: none;
   outline: none;
   cursor: pointer;
-   
 }
