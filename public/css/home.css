@@ -1,6 +1,5 @@
 /* home-main__section */
 .home-main__section {
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -966,10 +965,9 @@
   background-color: #ffffff;
 }
 
-
 .event-product_box .event-product_img {
   width: 100%;
-  height: 220PX;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
